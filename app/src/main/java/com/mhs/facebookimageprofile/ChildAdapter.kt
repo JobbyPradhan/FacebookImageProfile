@@ -6,14 +6,13 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RelativeLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mhs.facebookimageprofile.Assymetric.AGVRecyclerViewAdapter
 import com.mhs.facebookimageprofile.Assymetric.AsymmetricItem
 import com.mhs.facebookimageprofile.databinding.AdapterItemBinding
 import com.mhs.facebookimageprofile.model.ItemImage
-import com.nostra13.universalimageloader.core.ImageLoader
-import kotlin.Int
 
 
 class ChildAdapter(
@@ -27,6 +26,8 @@ class ChildAdapter(
     ):RecyclerView.ViewHolder(binding.root){
         @SuppressLint("SetTextI18n")
         fun bind(item: ItemImage,position: Int) {
+            Log.d("TASDFASDFAS", "bind: $position")
+
             Glide.with(binding.root).load(item.imagePath).into(binding.mImageView)
           /*  ImageLoader.getInstance()
                 .displayImage(item.imagePath, binding.mImageView)*/

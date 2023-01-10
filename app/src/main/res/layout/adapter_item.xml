@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rlImages"
     android:layout_width="wrap_content"
+    android:background="#99000000"
     android:layout_height="wrap_content"
-    android:background="#99000000">
+  >
+
+
 
     <ImageView
         android:id="@+id/mImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@color/teal_200"
         android:layout_alignParentTop="true"
         android:contentDescription="@string/app_name"
         />
@@ -21,6 +27,7 @@
         android:layout_alignBottom="@+id/mImageView"
         android:layout_alignStart="@+id/mImageView"
         android:layout_centerInParent="true"
+        android:layout_gravity="center"
         android:gravity="center"
         android:layout_alignEnd="@+id/mImageView"
         android:layout_alignTop="@+id/mImageView"

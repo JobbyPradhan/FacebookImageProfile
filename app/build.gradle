@@ -52,4 +52,7 @@ dependencies {
     implementation ('com.github.bumptech.glide:okhttp3-integration:4.12.0'){
         exclude group: 'glide-parent'
     }
+
+    //flexbox
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
 }
